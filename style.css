@@ -45,24 +45,20 @@ body {
   justify-content: center;
   z-index: 11;
 }
-
 .loader .loader-text {
   width: 25vw;
 }
-
 .loader .loader-text .loader-head {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
-
-.loader .loader-text .loader-head h3, h4 {
+.loader .loader-text .loader-head h3, .loader .loader-text .loader-head h4 {
   font-size: 1.1vw;
   color: #154359;
   font-weight: 100;
 }
-
-.loader-progress {
+.loader .loader-text .loader-progress {
   height: 30px;
   width: 100%;
   border-radius: 15px;
@@ -70,21 +66,18 @@ body {
   margin-top: 15px;
   padding: 1.5px;
 }
-
-.loader-inner {
+.loader .loader-text .loader-progress .loader-inner {
   height: 100%;
   width: 100%;
   border-radius: 50px;
   overflow: hidden;
 }
-
-.loader-growth {
+.loader .loader-text .loader-progress .loader-inner .loader-growth {
   height: 100%;
   width: 0%;
   background-color: #95b5c2;
   transform: skewX(50deg) translateX(-20%);
 }
-
 .loader img {
   scale: 1.25;
   position: absolute;
@@ -1271,7 +1264,7 @@ nav .nav-btn button {
     align-items: flex-end;
     justify-content: space-between;
   }
-  .loader .loader-text .loader-head h3, h4 {
+  .loader .loader-text .loader-head h3, .loader .loader-text .loader-head h4 {
     font-size: 3vw;
     color: #154359;
     font-weight: 100;
@@ -1440,11 +1433,11 @@ nav .nav-btn button {
     font-size: 7vw;
     color: white;
   }
-  form input::-moz-placeholder {
+  form input ::-moz-placeholder {
     color: #fff;
     font-size: 7vw;
   }
-  form input::placeholder {
+  form input ::placeholder {
     color: #fff;
     font-size: 7vw;
   }
@@ -1461,17 +1454,6 @@ nav .nav-btn button {
     bottom: -25%;
     right: 50%;
     transform: translateX(50%);
-  }
-  form button::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: white;
-    top: 0%;
-    left: 0%;
-    border-radius: 4px;
-    transform: skew(-30deg);
   }
   form button span {
     position: relative;
@@ -1531,30 +1513,30 @@ nav .nav-btn button {
     padding: 12px;
     overflow: hidden;
   }
-  .page1-content {
+  .page1 .page1-content {
     overflow: hidden;
     position: relative;
   }
-  .page1-hero {
+  .page1 .page1-content .page1-hero {
     transform: translateY(-20%);
   }
-  .page1-hero h3 {
+  .page1 .page1-content .page1-hero h3 {
     font-size: 2.9vw;
     color: #154359;
     margin-top: 4vw;
     width: 130%;
   }
-  .hero-imgdiv {
+  .page1 .page1-content .page1-hero .hero-imgdiv {
     height: 14vw;
     margin-bottom: 1vw;
   }
-  .hero-imgdiv img {
+  .page1 .page1-content .page1-hero .hero-imgdiv img {
     height: 100%;
   }
-  .page1-content .bg-img1 {
+  .page1 .page1-content .bg-img1 {
     display: none;
   }
-  .page1-content .bg-img2 {
+  .page1 .page1-content .bg-img2 {
     top: 68%;
     width: 100%;
   }
@@ -1565,12 +1547,12 @@ nav .nav-btn button {
     padding-top: 20vh;
     margin-bottom: -4vw;
   }
-  .page2-content {
+  .page2 .page2-content {
     height: 100vh;
     width: 100%;
     position: relative;
   }
-  .page2 video {
+  .page2 .page2-content video {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -1578,7 +1560,7 @@ nav .nav-btn button {
     mix-blend-mode: screen;
     position: absolute;
   }
-  .page2-content-text {
+  .page2 .page2-content .page2-content-text {
     height: 100%;
     width: 100%;
     position: relative;
@@ -1590,20 +1572,20 @@ nav .nav-btn button {
     gap: 1.2vw;
     color: white;
   }
-  .page2-content-text h4 {
+  .page2 .page2-content .page2-content-text h4 {
     font-size: 3vw;
     font-weight: 200;
     color: white;
   }
-  .page2-content-text h2 {
+  .page2 .page2-content .page2-content-text h2 {
     font-size: 5.2vw;
     font-weight: 100;
     padding: 0 7vw;
   }
-  .page2-content-text h2 span {
+  .page2 .page2-content .page2-content-text h2 span {
     display: inline-block;
   }
-  .page2-content-text p {
+  .page2 .page2-content .page2-content-text p {
     font-size: 3.5vw;
     margin-top: 5vw;
     font-weight: 100;
@@ -1616,18 +1598,18 @@ nav .nav-btn button {
     padding: 30vh 10vw 10vh 10vw;
     text-align: center;
   }
-  .page3-heading h4 {
+  .page3 .page3-heading h4 {
     font-size: 3vw;
     font-weight: 100;
     color: #154359;
   }
-  .page3-heading h2 {
+  .page3 .page3-heading h2 {
     font-size: 6vw;
     margin-top: 3vw;
     font-weight: 100;
     color: #154359;
   }
-  .page3-content {
+  .page3 .page3-content {
     height: 100vh;
     width: 100%;
     margin-top: 40vh;
@@ -1692,22 +1674,22 @@ nav .nav-btn button {
     align-items: center;
     justify-content: center;
   }
-  .page4 {
+  .page4-page5 .page4 {
     margin-top: -85%;
   }
-  .page4-content {
+  .page4-page5 .page4 .page4-content {
     height: 8vh;
     margin-top: -1vw;
     overflow: hidden;
   }
-  .page4-content h1 {
+  .page4-page5 .page4 .page4-content h1 {
     font-size: 10vw;
     font-weight: 100;
     text-align: center;
     color: #154359;
     margin-bottom: 5vw;
   }
-  .page5 {
+  .page4-page5 .page5 {
     min-height: 100vh;
     width: 100%;
     padding: 10vh 0;
@@ -1717,7 +1699,7 @@ nav .nav-btn button {
     align-items: center;
     justify-content: center;
   }
-  .certificate {
+  .page4-page5 .page5 .certificate {
     height: 60vh;
     width: 88vw;
     background-color: #154359;
@@ -1730,12 +1712,12 @@ nav .nav-btn button {
     justify-content: center;
     border-radius: 20px;
   }
-  .certificate img {
+  .page4-page5 .page5 .certificate img {
     width: 100%;
     height: 62%;
     position: absolute;
   }
-  .certificate-content-img {
+  .page4-page5 .page5 .certificate .certificate-content-img {
     height: 12vh;
     width: 28vw;
     position: relative;
@@ -1757,7 +1739,7 @@ nav .nav-btn button {
     justify-content: center;
     margin-top: 3.2vh;
   }
-  .paragraph {
+  .certificate-content .paragraph {
     height: 50%;
     width: 100%;
     display: flex;
@@ -1767,17 +1749,17 @@ nav .nav-btn button {
     margin-top: 1.5vh;
     margin-left: 8px;
   }
-  .paragraph h4 {
+  .certificate-content .paragraph h4 {
     color: white;
     font-size: 3.9vw;
     font-weight: 200;
   }
-  .paragraph h2 {
+  .certificate-content .paragraph h2 {
     margin-top: 1.5vw;
     font-size: 4.5vw;
     font-weight: 100;
   }
-  .paragraph button {
+  .certificate-content .paragraph button {
     margin-top: 15vh;
     padding: 1.5vh 4.5vw;
     border-radius: 50px;
@@ -1818,7 +1800,7 @@ nav .nav-btn button {
     font-weight: 100;
     margin-top: 2.5vh;
   }
-  .first-second-third {
+  .page7 .first-second-third {
     height: 100vh;
     width: 100vw;
     gap: 1vw;
@@ -1827,7 +1809,7 @@ nav .nav-btn button {
     flex-direction: column;
     padding-left: 5vw;
   }
-  .first {
+  .page7 .first-second-third .first {
     height: 25vh;
     width: 90vw;
     background-color: #fff;
@@ -1835,19 +1817,19 @@ nav .nav-btn button {
     padding-left: 4vh;
     margin-top: 140vh;
   }
-  .first img {
+  .page7 .first-second-third .first img {
     height: 9vh;
     width: 30vw;
     position: absolute;
     margin-top: -3vh;
   }
-  .first h3 {
+  .page7 .first-second-third .first h3 {
     font-size: 5vw;
     margin-top: 8vh;
     text-transform: uppercase;
     font-weight: 100;
   }
-  .first p {
+  .page7 .first-second-third .first p {
     font-size: 3.5vw;
     margin-top: 2vh;
     margin-bottom: 3vh;
@@ -1868,24 +1850,24 @@ nav .nav-btn button {
     margin-top: 10vh;
     margin-left: 0.1vw;
   }
-  .second img {
+  .image .second img {
     height: 9vh;
     width: 30vw;
     position: absolute;
     margin-top: -3vh;
   }
-  .second h3 {
+  .image .second h3 {
     font-size: 4.5vw;
     margin-top: 8vh;
     text-transform: uppercase;
     font-weight: 100;
   }
-  .second p {
+  .image .second p {
     font-size: 3.07vw;
     margin-top: 2vh;
     width: 80vw;
   }
-  .web {
+  .image .web {
     height: 30vh;
     width: 35vw;
     display: flex;
@@ -1895,11 +1877,11 @@ nav .nav-btn button {
     position: absolute;
     right: 15%;
   }
-  .web img {
+  .image .web img {
     height: 3vh;
     width: 5vh;
   }
-  .web h2 {
+  .image .web h2 {
     font-size: 4.3vw;
     font-weight: 200;
     padding-bottom: 142vh;
@@ -1947,7 +1929,7 @@ nav .nav-btn button {
     width: 40vw;
     margin-left: 5vh;
   }
-  .left-right .left h2 {
+  .page8 .left-right .left h2 {
     width: 88vw;
     height: 10vh;
     font-size: 7.2vw;
@@ -1956,7 +1938,7 @@ nav .nav-btn button {
     text-transform: uppercase;
     margin-top: 25vh;
   }
-  .left-right .left h4 {
+  .page8 .left-right .left h4 {
     width: 70vw;
     font-size: 3.8vw;
     font-weight: 100;
@@ -1964,7 +1946,7 @@ nav .nav-btn button {
     margin-top: 2vh;
     padding-left: 6vw;
   }
-  .left-right .left button {
+  .page8 .left-right .left button {
     width: 50vw;
     background-color: transparent;
     border: solid 1px rgb(105, 105, 105);
@@ -1977,7 +1959,7 @@ nav .nav-btn button {
     padding: 2vh 3vh;
     margin-left: 10vw;
   }
-  .left-right .left p {
+  .page8 .left-right .left p {
     width: 70vw;
     color: white;
     margin-top: 6vh;
@@ -2127,14 +2109,14 @@ nav .nav-btn button {
     justify-content: space-between;
     cursor: pointer;
   }
-  .quest1 h2 {
+  .page10 .questanscontainer .question1 .quest1 h2 {
     font-size: 25px;
     font-weight: 200;
   }
-  .quest1 h2:hover {
+  .page10 .questanscontainer .question1 .quest1 h2 :hover {
     color: #3CA0CE;
   }
-  .quest1 .icon1 {
+  .page10 .questanscontainer .question1 .quest1 .icon1 {
     font-size: 30px;
     font-weight: 200;
   }
@@ -2156,23 +2138,23 @@ nav .nav-btn button {
     justify-content: space-between;
     cursor: pointer;
   }
-  .quest2 h2 {
+  .page10 .questanscontainer .question2 .quest2 h2 {
     font-size: 25px;
     font-weight: 200;
   }
-  .quest2 h2:hover {
+  .page10 .questanscontainer .question2 .quest2 h2 :hover {
     color: #3CA0CE;
   }
-  .quest2 .icon2 {
+  .page10 .questanscontainer .question2 .quest2 .icon2 {
     font-size: 30px;
     font-weight: 200;
   }
-  .question2 .answer2 {
+  .page10 .questanscontainer .question2 .quest2 .answer2 {
     font-size: 18px;
     font-weight: 100;
     display: none;
   }
-  .question2 .line2 {
+  .page10 .questanscontainer .question2 .quest2 .line2 {
     height: 1px;
     width: 100%;
     background-color: #a3a5a3;
@@ -2185,23 +2167,23 @@ nav .nav-btn button {
     justify-content: space-between;
     cursor: pointer;
   }
-  .quest3 h2 {
+  .page10 .questanscontainer .question3 .quest3 h2 {
     font-size: 25px;
     font-weight: 200;
   }
-  .quest3 h2:hover {
+  .page10 .questanscontainer .question3 .quest3 h2 :hover {
     color: #3CA0CE;
   }
-  .quest3 .icon3 {
+  .page10 .questanscontainer .question3 .quest3 .icon3 {
     font-size: 30px;
     font-weight: 200;
   }
-  .question3 .answer3 {
+  .page10 .questanscontainer .question3 .quest3 .answer3 {
     font-size: 18px;
     font-weight: 100;
     display: none;
   }
-  .question3 .line3 {
+  .page10 .questanscontainer .question3 .quest3 .line3 {
     height: 1px;
     width: 100%;
     background-color: #a3a5a3;
